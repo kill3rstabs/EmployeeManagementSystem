@@ -25,7 +25,7 @@ This project is a simple Flask application for managing employee data using SQLi
 ## Running the Application
 
 ```bash
-python app.py
+flask run
 
 ```
 # Application Access
