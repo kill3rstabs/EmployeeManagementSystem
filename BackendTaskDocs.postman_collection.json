@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "47b372b7-c9af-4b76-926e-1dd09fc7ca81",
+		"name": "BackendTaskDocs",
+		"description": "EmployeeManagement System. Please use 127.0.0.1 before the api endpoints. Instead of the url that was hosted before.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22774584",
+		"_collection_link": "https://red-rocket-433695.postman.co/workspace/c5e30749-a3a1-4a1f-9d89-ab7699604ad2/collection/22774584-47b372b7-c9af-4b76-926e-1dd09fc7ca81?action=share&source=collection_link&creator=22774584"
+	},
+	"item": [
+		{
+			"name": "AverageSalaryByPosition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "/average_salary_by_positionEndFragment"
+			},
+			"response": [
+				{
+					"name": "AverageSalaryByPositionExample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://5000-kill3rstabs-tezeractbac-0qbdlpsudp5.ws-us106.gitpod.io/average_salary_by_position",
+							"protocol": "https",
+							"host": [
+								"5000-kill3rstabs-tezeractbac-0qbdlpsudp5",
+								"ws-us106",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"average_salary_by_position"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "253"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 16:55:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.12.0"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"average_salary\": 100000,\n        \"position\": \"Backend Developer\"\n    },\n    {\n        \"average_salary\": 102666.66666666667,\n        \"position\": \"Data Scientist\"\n    },\n    {\n        \"average_salary\": 91666.66666666667,\n        \"position\": \"Frontend Developer\"\n    },\n    {\n        \"average_salary\": 100000,\n        \"position\": \"Project Manager\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "TopEarnersBetweenDate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "/top_earners/"
+			},
+			"response": [
+				{
+					"name": "TopEarnersBetweenDateExample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://5000-kill3rstabs-tezeractbac-0qbdlpsudp5.ws-us106.gitpod.io/top_earners/3",
+							"protocol": "https",
+							"host": [
+								"5000-kill3rstabs-tezeractbac-0qbdlpsudp5",
+								"ws-us106",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"top_earners",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "298"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 17:02:26 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.12.0"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"joining_date\": \"2018-06-15\",\n        \"name\": \"Williams\",\n        \"position\": \"Data Scientist\",\n        \"salary\": 120000\n    },\n    {\n        \"id\": 2,\n        \"joining_date\": \"2021-05-20\",\n        \"name\": \"Jane\",\n        \"position\": \"Project Manager\",\n        \"salary\": 110000\n    },\n    {\n        \"id\": 4,\n        \"joining_date\": \"2020-12-05\",\n        \"name\": \"Johnson\",\n        \"position\": \"Backend Developer\",\n        \"salary\": 105000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "EmployeeRententionRate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "/retention_rate//"
+			},
+			"response": [
+				{
+					"name": "EmployeeRentationRateExamples",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://5000-kill3rstabs-tezeractbac-0qbdlpsudp5.ws-us106.gitpod.io/retention_rate/02032002/02032",
+							"protocol": "https",
+							"host": [
+								"5000-kill3rstabs-tezeractbac-0qbdlpsudp5",
+								"ws-us106",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"retention_rate",
+								"02032002",
+								"02032"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "214"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 17:12:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.12.0"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"position\": \"Backend Developer\",\n        \"retention_rate\": 0\n    },\n    {\n        \"position\": \"Data Scientist\",\n        \"retention_rate\": 0\n    },\n    {\n        \"position\": \"Frontend Developer\",\n        \"retention_rate\": 0\n    },\n    {\n        \"position\": \"Project Manager\",\n        \"retention_rate\": 0\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "GetAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "/"
+			},
+			"response": [
+				{
+					"name": "GetAllEmployeesExample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://5000-kill3rstabs-tezeractbac-0qbdlpsudp5.ws-us106.gitpod.io/",
+							"protocol": "https",
+							"host": [
+								"5000-kill3rstabs-tezeractbac-0qbdlpsudp5",
+								"ws-us106",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "981"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 17:05:15 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.12.0"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"joining_date\": \"2022-01-15\",\n        \"name\": \"John\",\n        \"position\": \"Data Scientist\",\n        \"salary\": 100000\n    },\n    {\n        \"id\": 2,\n        \"joining_date\": \"2021-05-20\",\n        \"name\": \"Jane\",\n        \"position\": \"Project Manager\",\n        \"salary\": 110000\n    },\n    {\n        \"id\": 3,\n        \"joining_date\": \"2020-03-10\",\n        \"name\": \"Bob\",\n        \"position\": \"Frontend Developer\",\n        \"salary\": 95000\n    },\n    {\n        \"id\": 4,\n        \"joining_date\": \"2020-12-05\",\n        \"name\": \"Johnson\",\n        \"position\": \"Backend Developer\",\n        \"salary\": 105000\n    },\n    {\n        \"id\": 5,\n        \"joining_date\": \"2019-08-22\",\n        \"name\": \"Alice\",\n        \"position\": \"Frontend Developer\",\n        \"salary\": 85000\n    },\n    {\n        \"id\": 6,\n        \"joining_date\": \"2018-06-15\",\n        \"name\": \"Williams\",\n        \"position\": \"Data Scientist\",\n        \"salary\": 120000\n    },\n    {\n        \"id\": 7,\n        \"joining_date\": \"2021-02-10\",\n        \"name\": \"Charlie\",\n        \"position\": \"Project Manager\",\n        \"salary\": 90000\n    },\n    {\n        \"id\": 8,\n        \"joining_date\": \"2022-09-30\",\n        \"name\": \"Brown\",\n        \"position\": \"Backend Developer\",\n        \"salary\": 95000\n    },\n    {\n        \"id\": 9,\n        \"joining_date\": \"2019-12-15\",\n        \"name\": \"Eva\",\n        \"position\": \"Frontend Developer\",\n        \"salary\": 95000\n    },\n    {\n        \"id\": 10,\n        \"joining_date\": \"2020-08-05\",\n        \"name\": \"Martinez\",\n        \"position\": \"Data Scientist\",\n        \"salary\": 88000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "FilterByExperience",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "/filter_by_experience//"
+			},
+			"response": [
+				{
+					"name": "FilterByExperienceExample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://5000-kill3rstabs-tezeractbac-0qbdlpsudp5.ws-us106.gitpod.io/filter_by_experience/1/2",
+							"protocol": "https",
+							"host": [
+								"5000-kill3rstabs-tezeractbac-0qbdlpsudp5",
+								"ws-us106",
+								"gitpod",
+								"io"
+							],
+							"path": [
+								"filter_by_experience",
+								"1",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "389"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 17:24:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.12.0"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"joining_date\": \"2022-01-15\",\n        \"name\": \"John\",\n        \"position\": \"Data Scientist\",\n        \"salary\": 100000\n    },\n    {\n        \"id\": 2,\n        \"joining_date\": \"2021-05-20\",\n        \"name\": \"Jane\",\n        \"position\": \"Project Manager\",\n        \"salary\": 110000\n    },\n    {\n        \"id\": 7,\n        \"joining_date\": \"2021-02-10\",\n        \"name\": \"Charlie\",\n        \"position\": \"Project Manager\",\n        \"salary\": 90000\n    },\n    {\n        \"id\": 8,\n        \"joining_date\": \"2022-09-30\",\n        \"name\": \"Brown\",\n        \"position\": \"Backend Developer\",\n        \"salary\": 95000\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "FilterBySalaryRange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "/filter_by_salary_range//"
+			},
+			"response": [
+				{
+					"name": "FilterBySalaryExample",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://127.0.0.1:5000/filter_by_salary_range/88000/110000",
+							"protocol": "https",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"filter_by_salary_range",
+								"88000",
+								"110000"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "783"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 28 Nov 2023 17:27:06 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.12.0"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"joining_date\": \"2022-01-15\",\n        \"name\": \"John\",\n        \"position\": \"Data Scientist\",\n        \"salary\": 100000\n    },\n    {\n        \"id\": 2,\n        \"joining_date\": \"2021-05-20\",\n        \"name\": \"Jane\",\n        \"position\": \"Project Manager\",\n        \"salary\": 110000\n    },\n    {\n        \"id\": 3,\n        \"joining_date\": \"2020-03-10\",\n        \"name\": \"Bob\",\n        \"position\": \"Frontend Developer\",\n        \"salary\": 95000\n    },\n    {\n        \"id\": 4,\n        \"joining_date\": \"2020-12-05\",\n        \"name\": \"Johnson\",\n        \"position\": \"Backend Developer\",\n        \"salary\": 105000\n    },\n    {\n        \"id\": 7,\n        \"joining_date\": \"2021-02-10\",\n        \"name\": \"Charlie\",\n        \"position\": \"Project Manager\",\n        \"salary\": 90000\n    },\n    {\n        \"id\": 8,\n        \"joining_date\": \"2022-09-30\",\n        \"name\": \"Brown\",\n        \"position\": \"Backend Developer\",\n        \"salary\": 95000\n    },\n    {\n        \"id\": 9,\n        \"joining_date\": \"2019-12-15\",\n        \"name\": \"Eva\",\n        \"position\": \"Frontend Developer\",\n        \"salary\": 95000\n    },\n    {\n        \"id\": 10,\n        \"joining_date\": \"2020-08-05\",\n        \"name\": \"Martinez\",\n        \"position\": \"Data Scientist\",\n        \"salary\": 88000\n    }\n]"
+				}
+			]
+		}
+	]
+}
