@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 DATABASE = 'employee_database.db'
 
+
 def query_db(query, args=(), one=False):
     conn = sqlite3.connect(DATABASE)
     conn.row_factory = sqlite3.Row
@@ -14,6 +15,8 @@ def query_db(query, args=(), one=False):
     result = cursor.fetchall() if not one else cursor.fetchone()
     conn.close()
     return result
+
+
 @app.route('/')
 def index():
     query = 'SELECT * FROM employees'
@@ -29,6 +32,26 @@ def index():
         for row in employees
     ]
     return jsonify(result_list)
+
+
+@app.route('/average_salary_by_position')
+def average_salary_by_position():
+    query = 'SELECT position, AVG(salary) as avg_salary FROM employees GROUP BY position'
+    average_salaries = query_db(query)
+
+    result_dict = [
+        {   
+            'position': row['position'],
+            'average_salary': row['avg_salary']
+        
+        }
+        
+        for row in average_salaries
+    ]
+
+    return jsonify(result_dict)
+
+
 @app.route('/filter_by_experience/<int:min_experience>/<int:max_experience>')
 def filter_by_experience(min_experience, max_experience):
     current_date = datetime.now()
@@ -67,6 +90,7 @@ def top_earners(n):
     ]
     return jsonify(result_list)
 
+
 @app.route('/retention_rate/<start_date>/<end_date>')
 def retention_rate(start_date, end_date):
     query = '''
@@ -85,6 +109,7 @@ def retention_rate(start_date, end_date):
     ]
     return jsonify(result_list)
 
+
 @app.route('/filter_by_salary_range/<int:min_salary>/<int:max_salary>')
 def filter_by_salary_range(min_salary, max_salary):
     query = 'SELECT * FROM employees WHERE salary BETWEEN ? AND ?'
@@ -100,6 +125,7 @@ def filter_by_salary_range(min_salary, max_salary):
         for row in filtered_employees
     ]
     return jsonify(result_list)
+
 
 if __name__ == '__main__':
     app.run(debug=True)

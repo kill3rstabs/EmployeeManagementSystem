@@ -52,3 +52,12 @@ Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your web browser to ac
 - **Endpoint:** /top_earners/<int:n>
 - **Method:** GET
 - **Example:** /top_earners/5
+
+### Filter Employees by Experience Level
+- **Endpoint:** /filter_by_experience/int:min_experience/int:max_experience
+- **Method:** GET
+- **Example:** /filter_by_experience/1/3
+
+### Calculate Average Salary by Position
+- **Endpoint:** /average_salary_by_position
+- **Method:** GET
