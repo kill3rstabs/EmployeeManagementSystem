@@ -27,7 +27,7 @@ This project is a simple Flask application for managing employee data using SQLi
 ```bash
 python app.py
 
-
+```
 # Application Access
 
 Visit [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your web browser to access the application.
@@ -60,3 +60,4 @@ Feel free to contribute by opening issues or submitting pull requests.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
