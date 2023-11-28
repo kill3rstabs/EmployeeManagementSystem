@@ -7,7 +7,7 @@ This project is a simple Flask application for managing employee data using SQLi
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/employee-management.git
+    git clone https://github.com/kill3rstabs/TezeractBackendTask.git
     ```
 
 2. **Install dependencies:**
@@ -19,7 +19,7 @@ This project is a simple Flask application for managing employee data using SQLi
 3. **Create the SQLite database:**
 
     ```bash
-    python create_database.py
+    python schema.py
     ```
 
 ## Running the Application
