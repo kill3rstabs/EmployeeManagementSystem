@@ -7,7 +7,7 @@ This project is a simple Flask application for managing employee data using SQLi
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/kill3rstabs/TezeractBackendTask.git
+    git clone https://github.com/kill3rstabs/EmployeeManagementSystem.git
     ```
 
 2. **Install dependencies:**
